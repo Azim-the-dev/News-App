@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= 7, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="nav-logo flex">
+                <img src="assets/logo.png">
+            </a>
+
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-query" placeholder="Search news articles...">
+                <button class="search-button" onclick="searchQuery()">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="error-screen">
+        <div class="error">
+            <div class="err-div">
+                <p class="err-p-top">Oops, something went wrong</p>
+                <br>
+                <p class="err-p-buttom">But don;t worry - it's not your fault</p>
+                <p id="err-code"></p>
+                <button id="retry-btn">Retry</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="card-template">
+        <div class="card">
+            <div class="card-hader">
+                <img src="https://via.placeholder.com/400x200.png" alt="news_image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-titel">This is the titel</h3>
+                <h6 class="news-sourse" id="news-sourse">End gaget 20/2/1010</h6>
+                <p id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officia
+                    veniam
+                    incidunt reprehenderit obcaecati a optio dolorem quia ex totam.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
