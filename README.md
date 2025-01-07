@@ -2,7 +2,7 @@
 <h2>Spotify Clone</h2>
 </div>
 
-This is a news app using newsapi.org API to fetch news and implemented search functionality
+This is a news app using newsapi.org API to fetch news and implemented search functionality 
 
 Link: [Click Here](https://azim-news-app.netlify.app/)
 
